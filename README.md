@@ -19,3 +19,8 @@
 
 ## Learn
 please see more details from: https://ipfs.io/docs/ `and` https://github.com/ipfs/js-ipfs-api
+
+## Cluster
+https://forum.dnaproject.org/t/dna-ipfs-ipfs-cluster-api
+......
+![alt text](docs/flow.png "text")
