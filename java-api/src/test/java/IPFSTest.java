@@ -1,4 +1,4 @@
-package com.cyber.blockchain.ipfs;
+import com.cyber.blockchain.ipfs.IPFSManager;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -32,15 +32,11 @@ public class IPFSTest {
         byte3.add(byte1);
         byte3.add(byte2);
 
-        IPFSController ic = new IPFSController();
+        IPFSManager ic = new IPFSManager();
 
-        System.out.println("========== 查询文件 ==========");
-        List<String> lsList = ic.LsFileIPFS();
-        System.out.println(lsList);
-
-//        System.out.println("========== 上传文件 ==========");
-//        List<String> addList = ic.AddFileBatchIPFS(byte3);
-//        System.out.println(addList);
+        System.out.println("========== 上传文件 ==========");
+        List<String> addList = ic.AddFileBatchIPFS(byte3);
+        System.out.println(addList);
 
 //        System.out.println("========== 下载文件 ==========");
 //        List<byte[]> getList = ic.GetFileBatchIPFS(addList);
@@ -49,6 +45,10 @@ public class IPFSTest {
 //        System.out.println("========== 删除文件 ==========");
 //        List<String> deleteList = ic.DeleteBatchFileIPFS(addList);
 //        System.out.println(deleteList);
+
+//        System.out.println("========== 查询文件 ==========");
+//        List<String> lsList = ic.LsFileIPFS();
+//        System.out.println(lsList);
     }
 
     /**
